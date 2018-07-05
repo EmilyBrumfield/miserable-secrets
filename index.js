@@ -1,0 +1,30 @@
+/*------------IMPORTANT--------------
+This method assumes that cards are always shuffled after each draw. I can put the non-shuffle option in,
+but I'm not sure there's any point.
+*/
+
+
+function test(){
+  let result = rollChart(table1)
+  outputReplace("output", result)
+}
+
+function rollChart(chart){
+  let result = chart[Math.floor(Math.random() * chart.length)]
+  return result
+}
+
+//OUTPUT FUNCTIONS
+//Outputs data stored in "content" to HTML element with id matching "target."
+
+function outputReplace (target, content) {  //Replaces existing target content with new content
+  document.getElementById(target).innerHTML = content;
+}
+
+function outputAdd (target, content) {  //Adds new content to existing target content
+  document.getElementById(target).innerHTML += content;
+}
+
+function outputAddLine (target, content) {  //Adds new content to existing target content, in a new line
+  document.getElementById(target).innerHTML += "<br \>" + content;
+}
