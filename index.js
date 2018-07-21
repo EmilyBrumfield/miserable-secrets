@@ -1,11 +1,14 @@
 /*------------IMPORTANT--------------
 This method assumes that cards are always shuffled after each draw. I can put the non-shuffle option in,
 but I'm not sure there's any point.
+
+Need to check for typoes in the charts. Also, there's at least some italics in there, so implement those manually.
 */
 
 
 function test(){
-  let result = rollChart(table1)
+  //let result = rollChart(table1)
+  let result = drawCard();
   outputReplace("output", result)
 }
 
