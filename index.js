@@ -7,9 +7,8 @@ Need to check for typoes in the charts. Also, there's at least some italics in t
 
 
 function test(){
-  //let result = rollChart(table1)
-  let result = drawCard();
-  outputReplace("output", result)
+  outputReplace("output", consultChart(NOBLESSE));
+  outputAdd("output", " -- " + deck.length);
 }
 
 function rollChart(chart){

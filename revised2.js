@@ -26,3 +26,14 @@ function drawCard() {
     deck.splice(cardIndex, 1);
     return card;
 }
+
+function consultChart(chart) {
+    let card = drawCard(); //draws a card
+    let cardKey = card;
+
+    if (Object.keys(chart).length === 6) { //removes suit if comparing to a only-numbers-matter chart, such as NOBLESSE
+        cardKey = cardKey.slice(1)
+    }
+
+    return card + ": " + chart[cardKey]
+}
