@@ -31,6 +31,36 @@ function drawCard() {
     return card;
 }
 
+function cardDisplay(card) { //converts a Suit Letter + Number format card to custom output format
+    let oldSuit = card.slice(0, 1);
+    let newSuit = "";
+    let newNumber = card.slice(1);
+
+    switch(oldSuit) {
+        case "C" :
+            newSuit = "\&#9827";
+            break;
+
+        case "S" :
+            newSuit = "\&#9824";
+            break;
+
+        case "D" :
+            newSuit = "\&#9830";
+            break;
+
+        case "H" :
+            newSuit = "\&#9829";
+            break;
+
+        default : 
+            newSuit = "?";
+    }
+
+    return newNumber + newSuit;
+
+}
+
 function consultChart(chart) {
     let card = drawCard(); //draws a card
     let cardKey = card;
@@ -39,5 +69,5 @@ function consultChart(chart) {
         cardKey = cardKey.slice(1)
     }
 
-    return card + ": " + chart[cardKey]
+    return cardDisplay(card) + ": " + chart[cardKey]
 }

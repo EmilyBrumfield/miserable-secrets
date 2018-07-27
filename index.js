@@ -1,6 +1,8 @@
 /*---TO DO------------------------
 --Finish chart data
---Implement shuffle modes
+--Implement shuffle modes; decided not to have an intermediate shuffle mode
+--Implement fill all, fill one for draws
+--Implement special font characters
 --Make GUI
 */
 
@@ -14,7 +16,7 @@ Need to check for typoes in the charts. Also, there's at least some italics in t
 
 
 function test(){
-  outputReplace("output", consultChart(NOBLESSE));
+  outputReplace("output", consultChart(TROUBLES));
   outputAdd("output", " -- " + deck.length);
 }
 
