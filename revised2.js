@@ -1,6 +1,10 @@
 let deck = []; //the current deck to be drawn from
 let alwaysShuffle = false; //setting that forces cards to shuffle before each draw
 
+function toggleShuffle(){
+    alwaysShuffle = !alwaysShuffle;
+}
+
 function shuffleCards() { //returns all drawn cards to the deck
     deck = [  //full deck of 24 cards; C is clubs, S is spades, D is diamonds, H is hearts, A is ace, Q is queen
         "CA", "C2", "C3", "C4", "C5", "CQ",

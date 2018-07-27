@@ -1,3 +1,10 @@
+/*---TO DO------------------------
+--Finish chart data
+--Implement shuffle modes
+--Make GUI
+*/
+
+
 /*------------IMPORTANT--------------
 This method assumes that cards are always shuffled after each draw. I can put the non-shuffle option in,
 but I'm not sure there's any point.
