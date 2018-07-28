@@ -10,18 +10,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <meta charset="utf-8">
     <meta name="theme-color" content="#C0D890">
-    <title>Template</title>
+    <title>Miserable Secrets</title>
   </head>
   <body>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
 
-    <span id="cards-left"></span>
-    <span id="cards-drawn"></span>
-    <button id="show1">Page 1</button>
-    <button id="show2">Page 2</button>
-    <button id="toggle-shuffle" onclick="toggleShuffle()">Manual Shuffle</button>
+    <div class="div-options">
+      <button id="show1">Page 1</button>
+      <button id="show2">Page 2</button>
+      <button id="toggle-shuffle" onclick="toggleShuffle()">Automatic Shuffle</button>
+      <button onclick="shuffleCards()">SHUFFLE CARDS</button>
+      Cards Left: <span id="cards-left">24</span>
+      Cards Drawn: <span id="cards-drawn">0</span>
+
+    </div>
 
     <div class="div-set">
     
@@ -124,8 +128,7 @@
     <!--TROUBLES x [1, 2, 3, 4, 5, 3]           -->
 
     
-    <script type="text/javascript" src="chartsRevised.js"></script>
-    <script type="text/javascript" src="revised2.js"></script>
+    <script type="text/javascript" src="charts.js"></script>
     <script type="text/javascript" src="display.js"></script>
     <script type="text/javascript" src="index.js"></script>
     
