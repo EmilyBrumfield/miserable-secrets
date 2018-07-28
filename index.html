@@ -2,7 +2,11 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" type="text/css" href="index.css">
-   
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.slim.js"
+			  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+        crossorigin="anonymous">
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <meta charset="utf-8">
     <meta name="theme-color" content="#C0D890">
@@ -15,6 +19,7 @@
 
     <span id="cards-left"></span>
     <span id="cards-drawn"></span>
+    <button id="toggleLandmarks">Toggle Landmarks</button>
 
     <div class="div-set">
     
@@ -38,27 +43,27 @@
         <button onclick="generateAspect('theme4', THEME)">THEME</button><span id="theme4"></span>
       </div>
 
-      <div class="div-slot">
+      <div class="div-slot landmarks">
         <button onclick="generateAspect('landmark1', LANDMARK)">LANDMARK</button><span id="landmark1"></span>
       </div>
 
-      <div class="div-slot">
+      <div class="div-slot landmarks">
         <button onclick="generateAspect('landmark2', LANDMARK)">LANDMARK</button><span id="landmark2"></span>
       </div>
 
-      <div class="div-slot">
+      <div class="div-slot landmarks">
         <button onclick="generateAspect('landmark3', LANDMARK)">LANDMARK</button><span id="landmark3"></span>
       </div>
 
-      <div class="div-slot">
+      <div class="div-slot landmarks">
         <button onclick="generateAspect('landmark4', LANDMARK)">LANDMARK</button><span id="landmark4"></span>
       </div>
 
-      <div class="div-slot">
+      <div class="div-slot landmarks">
         <button onclick="generateAspect('landmark5', LANDMARK)">LANDMARK</button><span id="landmark5"></span>
       </div>
 
-      <div class="div-slot">
+      <div class="div-slot landmarks">
         <button onclick="generateAspect('landmark6', LANDMARK)">LANDMARK</button><span id="landmark6"></span>
       </div>
 
@@ -119,6 +124,7 @@
     
     <script type="text/javascript" src="chartsRevised.js"></script>
     <script type="text/javascript" src="revised2.js"></script>
+    <script type="text/javascript" src="display.js"></script>
     <script type="text/javascript" src="index.js"></script>
     
   </body>

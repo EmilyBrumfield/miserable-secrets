@@ -1,6 +1,11 @@
+html, body {
+    height: 95%;
+}
+
 .div-set {
     display: flex;
     flex-flow: column wrap;
+    height: 100%;
     /*must have height*/
 }
 
@@ -10,11 +15,16 @@
 
 .div-slot button {
     height: 4em;
-    width: 20em;
+    width: 7em;
     margin-bottom: 1em;
+    text-align: center;
 }
 
 .div-slot span {
     padding-left: 1em;
     vertical-align: top;
+}
+
+#toggleLandmarks {
+    color: magenta;
 }
