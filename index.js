@@ -3,8 +3,6 @@
 --Implement shuffle modes; decided not to have an intermediate shuffle mode
 --Implement fill all, fill one for draws
 --Install special fonts
---Make UI
---Split up UI
 */
 
 

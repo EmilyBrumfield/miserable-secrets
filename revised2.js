@@ -3,6 +3,9 @@ let alwaysShuffle = false; //setting that forces cards to shuffle before each dr
 
 function toggleShuffle(){
     alwaysShuffle = !alwaysShuffle;
+    let oldLabel = document.getElementById("toggle-shuffle").innerHTML;
+    let newLabel = (oldLabel === "Manual Shuffle") ? "Automatic Shuffle" : "Manual Shuffle" ;
+    outputReplace("toggle-shuffle", newLabel)
 }
 
 function shuffleCards() { //returns all drawn cards to the deck

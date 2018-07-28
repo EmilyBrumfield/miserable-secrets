@@ -25,6 +25,6 @@ html, body {
     vertical-align: top;
 }
 
-#toggleLandmarks {
-    color: magenta;
+#toggle-shuffle {
+    background: white;
 }
