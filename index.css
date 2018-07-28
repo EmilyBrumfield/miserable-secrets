@@ -5,6 +5,18 @@
     height: 100%;
 }
 
+.page2 {
+    display: none;
+}
+
+.page3 {
+    display: none;
+}
+
+.page4 {
+    display: none;
+}
+
 .div-slot button {
     height: 3em;
     width: 7em;
