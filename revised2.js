@@ -28,6 +28,7 @@ function drawCard() {
     let cardIndex = Math.floor(Math.random() * deck.length)
     let card = deck[cardIndex];
     deck.splice(cardIndex, 1);
+    updateDeck(); //updates the card count on the UI
     return card;
 }
 
@@ -70,4 +71,14 @@ function consultChart(chart) {
     }
 
     return cardDisplay(card) + ": " + chart[cardKey]
+}
+
+function generateAspect(aspect, chart2) {  //aspect is the id for the slot to be filled, chart is the table to draw from
+    let result = consultChart(chart2)
+    outputReplace(aspect, result)
+}
+
+function updateDeck() {
+    outputReplace("cards-left", deck.length)
+    outputReplace("cards-drawn", 24 - deck.length)
 }

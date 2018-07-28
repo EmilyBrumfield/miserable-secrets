@@ -2,7 +2,7 @@
 --Finish chart data
 --Implement shuffle modes; decided not to have an intermediate shuffle mode
 --Implement fill all, fill one for draws
---Implement special font characters
+--Install special fonts
 --Make GUI
 */
 
@@ -18,11 +18,6 @@ Need to check for typoes in the charts. Also, there's at least some italics in t
 function test(){
   outputReplace("output", consultChart(TROUBLES));
   outputAdd("output", " -- " + deck.length);
-}
-
-function rollChart(chart){
-  let result = chart[Math.floor(Math.random() * chart.length)]
-  return result
 }
 
 //OUTPUT FUNCTIONS

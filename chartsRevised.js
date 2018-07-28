@@ -110,7 +110,7 @@ const QUIRK = {
     HQ: "Unfailingly honest."
 }
 
-const TROUBLE = {
+const PERSONALTROUBLE = {
 
     CA: "Has greatly exaggerated their skills.",
     C2: "An imposter living under a stolen name.",
@@ -226,7 +226,7 @@ const THEME = {
     HQ: "Seat of Power - Criminal"
 }
 
-const TROUBLES = {
+const TROUBLE = {
     CA: "A monster native to the region stalks the outlying cottages and farms",
     C2: "A mysterious explosion destroys an otherwise innocuous building",
     C3: "Marauders threaten to burn the town unless it complies with their demands",
