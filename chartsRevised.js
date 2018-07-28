@@ -54,6 +54,34 @@ const LANDMARK = {
     HQ: "Pleasure Garden"
 }
 
+const FAMILY = {
+
+    CA: "Vicianti - Durand",
+    C2: "Opal - Berger",
+    C3: "Draemont - Alair",
+    C4: "Sousberg - Fourier",
+    C5: "Delarochar - Beaulieu",
+    CQ: "Clanless - Mire",
+    SA: "Vicianti - Baptiste",
+    S2: "Opal - Gagne",
+    S3: "Draemont - Trosclair",
+    S4: "Sousberg - Mercier",
+    S5: "Delarochar - Chastain",
+    SQ: "Clanless - Pike",
+    DA: "Vicianti - Lefevre",
+    D2: "Opal - Mullins",
+    D3: "Draemont - Girerd",
+    D4: "Sousberg - Page",
+    D5: "Delarochar - Dupont",
+    DQ: "Clanless - Fetch",
+    HA: "Vicianti - Duval",
+    H2: "Opal - Paquet",
+    H3: "Draemont - Carrier",
+    H4: "Sousberg - Brodeur",
+    H5: "Delarochar - Leblanc",
+    HQ: "Clanless - Drue"
+}
+
 const OCCUPATION = {
 
     CA: "Child",
@@ -252,6 +280,8 @@ const TROUBLE = {
     H5: "The Mayor is dead, killed by a single stab to the heart.",
     HQ: "A foreign noble has arrived in town for mysterious reasons. They and their people are unfailingly polite, but many of the local youth have come down with acute anemia."
 }
+
+
 
 /*
 const TEMPLATE = {

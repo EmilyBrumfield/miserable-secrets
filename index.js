@@ -1,16 +1,8 @@
 /*---TO DO------------------------
---Finish chart data
---Implement shuffle modes; decided not to have an intermediate shuffle mode
---Implement fill all, fill one for draws
+--Implement fill all
 --Install special fonts
-*/
-
-
-/*------------IMPORTANT--------------
-This method assumes that cards are always shuffled after each draw. I can put the non-shuffle option in,
-but I'm not sure there's any point.
-
-Need to check for typoes in the charts. Also, there's at least some italics in there, so implement those manually.
+--Need to check for typoes in the charts. Also, there's at least some italics in there, so implement those manually.
+--Add output format for copy/paste or summary.
 */
 
 

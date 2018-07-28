@@ -4,13 +4,8 @@ html, body {
 
 .div-set {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     height: 100%;
-    /*must have height*/
-}
-
-.div-slot {
-    border: 1px solid magenta;
 }
 
 .div-slot button {
@@ -23,8 +18,4 @@ html, body {
 .div-slot span {
     padding-left: 1em;
     vertical-align: top;
-}
-
-#toggle-shuffle {
-    background: white;
 }

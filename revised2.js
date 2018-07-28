@@ -31,7 +31,13 @@ function drawCard() {
     let cardIndex = Math.floor(Math.random() * deck.length)
     let card = deck[cardIndex];
     deck.splice(cardIndex, 1);
+
+    if (alwaysShuffle) {  //shuffles cards again if Always Shuffle is active
+        shuffleCards();
+    }
+    
     updateDeck(); //updates the card count on the UI
+
     return card;
 }
 
