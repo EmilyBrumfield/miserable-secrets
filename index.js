@@ -104,6 +104,40 @@ function updateDeck() {
     outputReplace("cards-drawn", 24 - deck.length);
 };
 
+function generateTown() {
+    generateAspect('region', REGION);
+    generateAspect('theme1', THEME);
+    generateAspect('theme2', THEME);
+    generateAspect('theme3', THEME);
+
+    let landmarkRoll = Math.floor(Math.random() * 6) + 1;
+    for (let i = 1; i <= landmarkRoll; i++) {
+        generateAspect('landmark' + i, LANDMARK);
+    }
+
+    for (let i = 1; i <= 4; i++) {
+        generateAspect('person' + i + "-family", FAMILY);
+        generateAspect('person' + i + "-occupation", OCCUPATION);
+        generateAspect('person' + i + "-quirk1", QUIRK);
+        generateAspect('person' + i + "-quirk2", QUIRK);
+        generateAspect('person' + i + "-trouble", PERSONALTROUBLE);
+    }
+
+    generateAspect('noblesse', NOBLESSE);
+    generateAspect('church', CHURCH);
+    generateAspect('health', HEALTH);
+    generateAspect('prosperity', PROSPERITY);
+    generateAspect('harmony', HARMONY);
+    generateAspect('justice', JUSTICE);
+
+    let troubleIndex = Math.floor(Math.random() * 6);
+    let troubleDie = [1, 2, 3, 4, 5, 3];
+    for (let i = 1; i <= troubleDie[troubleIndex]; i++) {
+        generateAspect('trouble' + i, TROUBLE);
+    }
+
+}
+
 //OUTPUT FUNCTIONS
 //Outputs data stored in "content" to HTML element with id matching "target."
 

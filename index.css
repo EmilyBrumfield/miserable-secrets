@@ -4,8 +4,7 @@
 
 .div-set {
     display: flex;
-    flex-flow: column wrap;
-    
+    flex-flow: column wrap;    
 }
 
 .div-section {
@@ -29,7 +28,8 @@
 }
 
 .div-slot-trouble {
-    height: 2.5em;
+    flex-flow: row nowrap;
+    height: 3em;
 }
 
 .div-options button {
