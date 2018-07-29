@@ -6,7 +6,7 @@ let alwaysShuffle = false; //setting to true forces cards to shuffle before and 
 function toggleShuffle(){
     alwaysShuffle = !alwaysShuffle;
     let oldLabel = document.getElementById("toggle-shuffle").innerHTML;
-    let newLabel = (oldLabel === "Manual Shuffle") ? "Automatic Shuffle" : "Manual Shuffle" ;
+    let newLabel = (oldLabel === "Manual") ? "Auto" : "Manual" ;
     outputReplace("toggle-shuffle", newLabel);
 };
 
@@ -91,8 +91,7 @@ function generateAspect(aspect, chart2) {  //aspect is the id for the slot to be
 };
 
 function updateDeck() {
-    outputReplace("cards-left", deck.length);
-    outputReplace("cards-drawn", 24 - deck.length);
+    outputReplace("cards-left", "Deck " + deck.length);
 };
 
 function generateTown() {

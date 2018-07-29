@@ -20,7 +20,25 @@
     <h1 class="main-heading">Miserable Secrets</h1>
     <p class="sub-heading">By Rose Bailey, Benjamin Baugh, and Meghan Fitzgerald. Web app by Emily Brumfield.</p>
 
-    <div class="div-options">
+    <div class="top-row">
+      
+      
+      <div class="div-deck">
+    
+          <div class="div-deck-display"><div id="cards-left">Deck 24</div></div>
+          
+          <button id="toggle-shuffle" onclick="toggleShuffle()">Manual</button>
+          
+          <button onclick="shuffleCards()">Shuffle</button>
+      </div>
+
+      <div class="div-creation">
+        <button onclick="generateTown()">CREATE</button>
+        <button onclick="clearEverything()">ERASE</button>
+      </div>
+    </div>
+
+    <div class="div-pages">
       <button id="show1">Region/Themes</button>
       <button id="show2">Landmarks</button>
       <button id="show3">Locals 1-2</button>
@@ -29,13 +47,6 @@
       <button id="show6">Conditions</button>
       <button id="show7">Troubles</button>
       <button id="show8">Summary</button>
-      <button id="toggle-shuffle" onclick="toggleShuffle()">Manual Shuffle</button>
-      <button onclick="shuffleCards()">SHUFFLE CARDS</button>
-      <button onclick="generateTown()">CREATE</button>
-      <button onclick="clearEverything()">ERASE</button>
-      Cards Left: <span id="cards-left">24</span>
-      Cards Drawn: <span id="cards-drawn">0</span>
-
     </div>
 
     <div class="div-set">
