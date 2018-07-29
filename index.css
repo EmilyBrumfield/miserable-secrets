@@ -1,25 +1,32 @@
-
-.div-set {
-    display: flex;
-    flex-flow: column nowrap;
+html, body {
     height: 100%;
 }
 
-.page2 {
-    display: none;
+.div-options {
+    margin-bottom: 1em;
 }
 
-.page3 {
-    display: none;
+.div-section {
+    border: 1px solid black;
+    margin-top: 1em;
+    width: 49%;
 }
 
-.page4 {
-    display: none;
+.div-set {
+    display: flex;
+    flex-flow: column wrap;
+    height: 100%;
+}
+
+.div-slot {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 1em;
 }
 
 .div-slot button {
     height: 3em;
-    width: 7em;
+    width: 8%;
     margin-bottom: 1em;
     text-align: center;
 }
@@ -27,7 +34,30 @@
 .div-slot span {
     padding-left: 1em;
     vertical-align: top;
+    height: 3em;
+    width: 40%;
 }
+
+.div-person {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 1em;
+}
+
+.div-person button {
+    height: 3em;
+    width: 16%;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.div-person span {
+    padding-left: 1em;
+    vertical-align: top;
+    height: 3em;
+    width: 80%;
+}
+
 
 .div-options button {
     height: 2em;

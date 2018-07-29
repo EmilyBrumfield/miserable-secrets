@@ -1,16 +1,24 @@
 $(document).ready(() => {
-  const $page1 = $('.page1')
-  const $page2 = $('.page2')
-  const $page3 = $('.page3')
-  const $page4 = $('.page4')
+  const $page1 = $('.page1');
+  const $page2 = $('.page2');
+  const $page3 = $('.page3');
+  const $page4 = $('.page4');
+  const $page5 = $('.page5');
+  const $page6 = $('.page6');
 
     $page2.hide();
+    $page3.hide();
+    $page4.hide();
+    $page5.hide();
+    $page6.hide();
 
     $( "#show1" ).click(function() {
         $page1.show();
         $page2.hide();
         $page3.hide();
         $page4.hide();
+        $page5.hide();
+        $page6.hide();
     });
 
     $( "#show2" ).click(function() {
@@ -18,6 +26,8 @@ $(document).ready(() => {
         $page1.hide();
         $page3.hide();
         $page4.hide();
+        $page5.hide();
+        $page6.hide();
     });
 
     $( "#show3" ).click(function() {
@@ -25,6 +35,8 @@ $(document).ready(() => {
         $page1.hide();
         $page2.hide();
         $page4.hide();
+        $page5.hide();
+        $page6.hide();
     });
 
     $( "#show4" ).click(function() {
@@ -32,6 +44,26 @@ $(document).ready(() => {
         $page1.hide();
         $page2.hide();
         $page3.hide();
+        $page5.hide();
+        $page6.hide();
+    });
+
+    $( "#show5" ).click(function() {
+        $page5.show();
+        $page1.hide();
+        $page2.hide();
+        $page3.hide();
+        $page4.hide();
+        $page6.hide();
+    });
+
+    $( "#show6" ).click(function() {
+        $page6.show();
+        $page1.hide();
+        $page2.hide();
+        $page3.hide();
+        $page4.hide();
+        $page5.hide();
     });
 
 });
