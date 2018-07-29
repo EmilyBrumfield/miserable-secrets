@@ -1,3 +1,7 @@
+body {
+    font-family: "Miserable-Secrets-Game-Icons-3", sans-serif;
+}
+
 .div-options {
     margin-bottom: 1em;
 }
@@ -38,3 +42,9 @@
     width: 90%;
     height: 30em;
 }
+
+@font-face {
+    font-family: Miserable-Secrets-Game-Icons-3;
+    src: url(Miserable-Secrets-Game-Icons-3.woff) format("woff");         
+    unicode-range: U+2660, U+2665, U+2666, U+2663, U+2664, U+2662, U+2667;
+  }

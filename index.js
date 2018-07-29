@@ -1,9 +1,3 @@
-/*---TO DO-----------------------
---Install special fonts
---Need to check for typos in the charts. Also, there's at least some italics in there, so implement those manually.
---Add output format for copy/paste or summary
-*/
-
 //CARD FUNCTIONS
 
 let deck = []; //the current deck to be drawn from
@@ -57,19 +51,19 @@ function cardDisplay(card) { //converts a Suit Letter + Number format card to cu
 
     switch(oldSuit) {
         case "C" :
-            newSuit = "\&#9827";
+            newSuit = "\u2663";
             break;
 
         case "S" :
-            newSuit = "\&#9824";
+            newSuit = "\u2660";
             break;
 
         case "D" :
-            newSuit = "\&#9830";
+            newSuit = "\u2666";
             break;
 
         case "H" :
-            newSuit = "\&#9829";
+            newSuit = "\u2665";
             break;
 
         default : 
