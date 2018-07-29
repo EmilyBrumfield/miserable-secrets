@@ -43,6 +43,15 @@ body {
     height: 30em;
 }
 
+.main-heading {
+    font-weight: bold;
+    text-align: center;
+}
+
+.sub-heading {
+    text-align: center;
+}
+
 @font-face {
     font-family: Miserable-Secrets-Game-Icons-3;
     src: url(Miserable-Secrets-Game-Icons-3.woff) format("woff");         
