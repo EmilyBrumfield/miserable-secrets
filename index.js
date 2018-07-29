@@ -1,8 +1,7 @@
 /*---TO DO-----------------------
 --Install special fonts
 --Need to check for typos in the charts. Also, there's at least some italics in there, so implement those manually.
---Add output format for copy/paste or summary.
---IMPORTANT: Fix text spans going overlong and adding a big line break.
+--Add output format for copy/paste or summary
 */
 
 //CARD FUNCTIONS
@@ -165,6 +164,93 @@ function clearEverything() {
         outputReplace('trouble' + i, "");
     }
 
+}
+
+function addSummary(target, title){
+    let spanContents = document.getElementById(target).innerHTML;
+    
+    if (spanContents.length > 0) {
+        document.getElementById("summary").value += title + spanContents + "\n\n";
+    }
+}
+
+function addSummaryLine(line){
+        document.getElementById("summary").value += line;
+}
+
+function fillSummary(){
+    
+    document.getElementById("summary").value = "";
+
+    addSummary('region', "Region ");
+    addSummary('theme1', "Theme ");
+    addSummary('theme2', "Theme ");
+    addSummary('theme3', "Theme ");
+    addSummary('theme4', "Theme ");
+    addSummary('landmark1', "Landmark ");
+    addSummary('landmark2', "Landmark ");
+    addSummary('landmark3', "Landmark ");
+    addSummary('landmark4', "Landmark ");
+    addSummary('landmark5', "Landmark ");
+    addSummary('landmark6', "Landmark ");
+    
+    addSummaryLine("\n")
+    addSummary('person1-family', "Family ");
+    addSummary('person1-occupation', "Occupation ");
+    addSummary('person1-quirk1', "Quirk ");
+    addSummary('person1-quirk2', "Quirk ");
+    addSummary('person1-trouble', "Trouble ");
+
+    addSummaryLine("\n")
+    addSummary('person2-family', "Family ");
+    addSummary('person2-occupation', "Occupation ");
+    addSummary('person2-quirk1', "Quirk ");
+    addSummary('person2-quirk2', "Quirk ");
+    addSummary('person2-trouble', "Trouble ");
+
+    addSummaryLine("\n")
+    addSummary('person3-family', "Family ");
+    addSummary('person3-occupation', "Occupation ");
+    addSummary('person3-quirk1', "Quirk ");
+    addSummary('person3-quirk2', "Quirk ");
+    addSummary('person3-trouble', "Trouble ");
+    
+    addSummaryLine("\n")
+    addSummary('person4-family', "Family ");
+    addSummary('person4-occupation', "Occupation ");
+    addSummary('person4-quirk1', "Quirk ");
+    addSummary('person4-quirk2', "Quirk ");
+    addSummary('person4-trouble', "Trouble ");
+
+    addSummaryLine("\n")
+    addSummary('person5-family', "Family ");
+    addSummary('person5-occupation', "Occupation ");
+    addSummary('person5-quirk1', "Quirk ");
+    addSummary('person5-quirk2', "Quirk ");
+    addSummary('person5-trouble', "Trouble ");
+
+    addSummaryLine("\n")
+    addSummary('person6-family', "Family ");
+    addSummary('person6-occupation', "Occupation ");
+    addSummary('person6-quirk1', "Quirk ");
+    addSummary('person6-quirk2', "Quirk ");
+    addSummary('person6-trouble', "Trouble ");
+
+    addSummaryLine("\n");
+
+    addSummary('noblesse', "Noblesse ");
+    addSummary('church', "Church ");
+    addSummary('health', "Health ");
+    addSummary('prosperity', "Prosperity ");
+    addSummary('harmony', "Harmony ");
+    addSummary('justice', "Justice ");
+    
+    addSummary('trouble1', "Local Troubles ");
+    addSummary('trouble2', "Local Troubles ");
+    addSummary('trouble3', "Local Troubles ");
+    addSummary('trouble4', "Local Troubles ");
+    addSummary('trouble5', "Local Troubles ");
+    
 }
 
 //OUTPUT FUNCTIONS

@@ -25,6 +25,7 @@
       <button id="show5">Locals 5-6</button>
       <button id="show6">Conditions</button>
       <button id="show7">Troubles</button>
+      <button id="show8">Summary</button>
       <button id="toggle-shuffle" onclick="toggleShuffle()">Manual Shuffle</button>
       <button onclick="shuffleCards()">SHUFFLE CARDS</button>
       <button onclick="generateTown()">CREATE</button>
@@ -284,6 +285,11 @@
         <button onclick="generateAspect('trouble5', TROUBLE)">TROUBLE</button><br /><span id="trouble5"></span>
       </div>
     
+    </div>
+
+    <div class="page8">
+      <button class="fix-vertical" onClick="fillSummary()">UPDATE</button>
+      <textarea class="fix-vertical" id="summary"></textarea>
     </div>
     
     <script type="text/javascript" src="charts.js"></script>

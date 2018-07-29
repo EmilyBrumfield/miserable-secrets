@@ -6,6 +6,7 @@ $(document).ready(() => {
   const $page5 = $('.page5');
   const $page6 = $('.page6');
   const $page7 = $('.page7');
+  const $page8 = $('.page8');
 
     $page2.hide();
     $page3.hide();
@@ -13,6 +14,7 @@ $(document).ready(() => {
     $page5.hide();
     $page6.hide();
     $page7.hide();
+    $page8.hide();
 
     $( "#show1" ).click(function() {
         $page1.show();
@@ -22,6 +24,7 @@ $(document).ready(() => {
         $page5.hide();
         $page6.hide();
         $page7.hide();
+        $page8.hide();
     });
 
     $( "#show2" ).click(function() {
@@ -32,6 +35,7 @@ $(document).ready(() => {
         $page5.hide();
         $page6.hide();
         $page7.hide();
+        $page8.hide();
     });
 
     $( "#show3" ).click(function() {
@@ -42,6 +46,7 @@ $(document).ready(() => {
         $page5.hide();
         $page6.hide();
         $page7.hide();
+        $page8.hide();
     });
 
     $( "#show4" ).click(function() {
@@ -52,6 +57,7 @@ $(document).ready(() => {
         $page5.hide();
         $page6.hide();
         $page7.hide();
+        $page8.hide();
     });
 
     $( "#show5" ).click(function() {
@@ -62,6 +68,7 @@ $(document).ready(() => {
         $page4.hide();
         $page6.hide();
         $page7.hide();
+        $page8.hide();
     });
 
     $( "#show6" ).click(function() {
@@ -72,6 +79,7 @@ $(document).ready(() => {
         $page4.hide();
         $page5.hide();
         $page7.hide();
+        $page8.hide();
     });
 
     $( "#show7" ).click(function() {
@@ -82,6 +90,18 @@ $(document).ready(() => {
         $page4.hide();
         $page5.hide();
         $page6.hide();
+        $page8.hide();
+    });
+
+    $( "#show8" ).click(function() {
+        $page8.show();
+        $page1.hide();
+        $page2.hide();
+        $page3.hide();
+        $page4.hide();
+        $page5.hide();
+        $page6.hide();
+        $page7.hide();
     });
 
 });
