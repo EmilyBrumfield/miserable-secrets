@@ -102,6 +102,7 @@ $(document).ready(() => {
         $page5.hide();
         $page6.hide();
         $page7.hide();
+        
     });
 
 });

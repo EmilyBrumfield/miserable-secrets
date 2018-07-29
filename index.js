@@ -1,14 +1,19 @@
 //CARD FUNCTIONS
+//Removed deck shuffling from the actual UI because it complicated the user experience too much.
+
 
 let deck = []; //the current deck to be drawn from
-let alwaysShuffle = false; //setting to true forces cards to shuffle before and after each draw
+let alwaysShuffle = true; //setting to true forces cards to shuffle before and after each draw
 
+
+/*
 function toggleShuffle(){
     alwaysShuffle = !alwaysShuffle;
     let oldLabel = document.getElementById("toggle-shuffle").innerHTML;
     let newLabel = (oldLabel === "Manual") ? "Auto" : "Manual" ;
     outputReplace("toggle-shuffle", newLabel);
 };
+*/
 
 function shuffleCards() { //returns all drawn cards to the deck
     deck = [  //full deck of 24 cards; C is clubs, S is spades, D is diamonds, H is hearts, A is ace, Q is queen
@@ -18,7 +23,7 @@ function shuffleCards() { //returns all drawn cards to the deck
         "HA", "H2", "H3", "H4", "H5", "HQ"
     ];
 
-    updateDeck(); //updates the card count on the UI
+    /* updateDeck(); //updates the card count on the UI */
 };
 
 function drawCard() {
@@ -40,7 +45,7 @@ function drawCard() {
         shuffleCards();
     };
 
-    updateDeck(); //updates the card count on the UI
+    /* updateDeck(); //updates the card count on the UI */
     return card;
 }
 
@@ -51,19 +56,19 @@ function cardDisplay(card) { //converts a Suit Letter + Number format card to cu
 
     switch(oldSuit) {
         case "C" :
-            newSuit = "\u2663";
+            newSuit = "<font color='000000'>\u2663</font>";
             break;
 
         case "S" :
-            newSuit = "\u2660";
+            newSuit = "<font color='000000'>\u2660</font>";
             break;
 
         case "D" :
-            newSuit = "\u2666";
+            newSuit = "<font color='FF0000'>\u2666</font>";
             break;
 
         case "H" :
-            newSuit = "\u2665";
+            newSuit = "<font color='FF0000'>\u2665</font>";
             break;
 
         default : 
@@ -88,11 +93,16 @@ function consultChart(chart) {
 function generateAspect(aspect, chart2) {  //aspect is the id for the slot to be filled, chart is the table to draw from
     let result = consultChart(chart2);
     outputReplace(aspect, result);
+    fillSummary();
 };
+
+/*
 
 function updateDeck() {
     outputReplace("cards-left", "Deck " + deck.length);
 };
+
+*/
 
 function generateTown() {
     generateAspect('region', REGION);
@@ -156,6 +166,8 @@ function clearEverything() {
     for (let i = 1; i <= 5; i++) {
         outputReplace('trouble' + i, "");
     }
+
+    document.getElementById("summary").value = "";
 
 }
 
@@ -228,8 +240,6 @@ function fillSummary(){
     addSummary('person6-quirk1', "Quirk ");
     addSummary('person6-quirk2', "Quirk ");
     addSummary('person6-trouble', "Trouble ");
-
-    addSummaryLine("\n");
 
     addSummary('noblesse', "Noblesse ");
     addSummary('church', "Church ");

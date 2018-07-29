@@ -2,45 +2,21 @@ body {
     font-family: "Miserable-Secrets-Game-Icons-3", sans-serif;
 }
 
-.top-row {
-    display: flex;
-    flex-flow: row nowrap;
-}
-
-.div-deck button {
-    background-color: white;
-    border: 1px solid black;
-    height: 3em;
-    width: 8em;
-}
-
-.div-deck-display {
-    height: 2em;
-    width: 6em;
-    background-color: white;
-    border: 1px solid black;
-    vertical-align: top;
-    text-align: center;
-    margin-right: 1em;
-}
-
-#cards-left {
-    line-height: 2em;
-}
-
-.div-creation button {
-    background-color: white;
-    border: 1px solid black;
-    height: 3em;
-    width: 8em;
-}
-
 .div-pages button {
-    background-color: lightgray;
+    
     border: 1px solid black;
     height: 3em;
     width: 8em;
     margin-bottom: 1em;
+}
+
+.lightgray {
+    background-color: lightgray;
+}
+
+.important {
+    background-color: white;
+    font-weight: bold;
 }
 
 .div-set {
