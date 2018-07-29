@@ -12,8 +12,6 @@
 }
 
 .div-slot {
-    display: flex;
-    flex-flow: row wrap;
     margin-bottom: 0.25em;
 }
 
@@ -25,9 +23,6 @@
 .div-slot span {
     padding-left: 0.25em;
     vertical-align: top;
-}
-
-.div-slot-trouble {
 }
 
 .div-options button {

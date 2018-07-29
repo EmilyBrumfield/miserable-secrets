@@ -1,9 +1,7 @@
-/*---TO DO------------------------
---Implement fill all, clear all, fill section, clear section
+/*---TO DO-----------------------
 --Install special fonts
 --Need to check for typos in the charts. Also, there's at least some italics in there, so implement those manually.
 --Add output format for copy/paste or summary.
---Add LOCALS sections
 --IMPORTANT: Fix text spans going overlong and adding a big line break.
 */
 
@@ -134,6 +132,37 @@ function generateTown() {
     let troubleDie = [1, 2, 3, 4, 5, 3];
     for (let i = 1; i <= troubleDie[troubleIndex]; i++) {
         generateAspect('trouble' + i, TROUBLE);
+    }
+
+}
+
+function clearEverything() {
+    outputReplace('region', "");
+    outputReplace('theme1', "");
+    outputReplace('theme2', "");
+    outputReplace('theme3', "");
+
+    for (let i = 1; i <= 6; i++) {
+        outputReplace('landmark' + i, "");
+    }
+
+    for (let i = 1; i <= 4; i++) {
+        outputReplace('person' + i + "-family", "");
+        outputReplace('person' + i + "-occupation", "");
+        outputReplace('person' + i + "-quirk1", "");
+        outputReplace('person' + i + "-quirk2", "");
+        outputReplace('person' + i + "-trouble", "");
+    }
+
+    outputReplace('noblesse', "");
+    outputReplace('church', "");
+    outputReplace('health', "");
+    outputReplace('prosperity', "");
+    outputReplace('harmony', "");
+    outputReplace('justice', "");
+
+    for (let i = 1; i <= 5; i++) {
+        outputReplace('trouble' + i, "");
     }
 
 }
