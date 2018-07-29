@@ -1,63 +1,36 @@
-html, body {
-    height: 100%;
-}
-
 .div-options {
     margin-bottom: 1em;
-}
-
-.div-section {
-    border: 1px solid black;
-    margin-top: 1em;
-    width: 49%;
 }
 
 .div-set {
     display: flex;
     flex-flow: column wrap;
-    height: 100%;
+    
+}
+
+.div-section {
+    margin-bottom: 2em;
 }
 
 .div-slot {
     display: flex;
     flex-flow: row wrap;
-    margin-bottom: 1em;
+    margin-bottom: 0.25em;
 }
 
 .div-slot button {
-    height: 3em;
-    width: 8%;
-    margin-bottom: 1em;
-    text-align: center;
+    width: 7em;
+    margin-bottom: 0.25em;
 }
 
 .div-slot span {
-    padding-left: 1em;
+    padding-left: 0.25em;
     vertical-align: top;
-    height: 3em;
-    width: 40%;
 }
 
-.div-person {
-    display: flex;
-    flex-flow: row wrap;
-    margin-bottom: 1em;
+.div-slot-trouble {
+    height: 2.5em;
 }
-
-.div-person button {
-    height: 3em;
-    width: 16%;
-    margin-bottom: 1em;
-    text-align: center;
-}
-
-.div-person span {
-    padding-left: 1em;
-    vertical-align: top;
-    height: 3em;
-    width: 80%;
-}
-
 
 .div-options button {
     height: 2em;
