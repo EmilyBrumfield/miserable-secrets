@@ -173,7 +173,10 @@ function clearEverything() {
 
 function addSummary(target, title){
     let spanContents = document.getElementById(target).innerHTML;
-    
+    spanContents = spanContents.replace('<font color="000000">', "")
+    spanContents = spanContents.replace('<font color="FF0000">', "")
+    spanContents = spanContents.replace("</font>", "")
+
     if (spanContents.length > 0) {
         document.getElementById("summary").value += title + spanContents + "\n\n";
     }
