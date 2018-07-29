@@ -145,12 +145,13 @@ function clearEverything() {
     outputReplace('theme1', "");
     outputReplace('theme2', "");
     outputReplace('theme3', "");
+    outputReplace('theme4', "");
 
     for (let i = 1; i <= 6; i++) {
         outputReplace('landmark' + i, "");
     }
 
-    for (let i = 1; i <= 4; i++) {
+    for (let i = 1; i <= 6; i++) {
         outputReplace('person' + i + "-family", "");
         outputReplace('person' + i + "-occupation", "");
         outputReplace('person' + i + "-quirk1", "");
