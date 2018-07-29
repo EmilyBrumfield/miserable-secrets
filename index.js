@@ -105,6 +105,8 @@ function updateDeck() {
 */
 
 function generateTown() {
+    clearEverything();
+
     generateAspect('region', REGION);
     generateAspect('theme1', THEME);
     generateAspect('theme2', THEME);
