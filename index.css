@@ -28,11 +28,17 @@
 }
 
 .div-slot-trouble {
-    flex-flow: row nowrap;
-    height: 3em;
 }
 
 .div-options button {
     height: 2em;
     width: 10em;
 }
+
+/*
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+*/
