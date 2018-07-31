@@ -1,5 +1,12 @@
+/*font-family: 'Cinzel', serif;*/
+
 body {
     font-family: "Miserable-Secrets-Game-Icons-3", sans-serif;
+    background-color: rgb(234, 227, 217);
+}
+
+.cinzel {
+    font-family: 'Cinzel', serif;
 }
 
 .div-pages button {
@@ -8,6 +15,8 @@ body {
     height: 3em;
     width: 8em;
     margin-bottom: 1em;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
 }
 
 .lightgray {
@@ -17,6 +26,7 @@ body {
 .important {
     background-color: white;
     font-weight: bold;
+    font-family: 'Cinzel', serif;
 }
 
 .div-set {
@@ -33,6 +43,8 @@ body {
 }
 
 .div-slot button {
+    background-color: white;
+    border: 1px solid black;
     width: 7em;
     margin-bottom: 0.25em;
 }
