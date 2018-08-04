@@ -122,6 +122,11 @@ function generateTown() {
         generateAspect('person' + i + "-occupation", OCCUPATION);
         generateAspect('person' + i + "-quirk1", QUIRK);
         generateAspect('person' + i + "-quirk2", QUIRK);
+
+        if (document.getElementById('person' + i + "-quirk1").innerHTML === document.getElementById('person' + i + "-quirk2").innerHTML){
+            document.getElementById('person' + i + "-quirk2").innerHTML = "";
+        }
+
         generateAspect('person' + i + "-trouble", PERSONALTROUBLE);
     }
 

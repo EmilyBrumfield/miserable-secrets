@@ -7,7 +7,7 @@ $(document).ready(() => {
   const $page6 = $('.page6');
   const $page7 = $('.page7');
   const $page8 = $('.page8');
-
+/*
     $page2.hide();
     $page3.hide();
     $page4.hide();
@@ -15,6 +15,7 @@ $(document).ready(() => {
     $page6.hide();
     $page7.hide();
     $page8.hide();
+    */
 
     $( "#show1" ).click(function() {
         $page1.show();

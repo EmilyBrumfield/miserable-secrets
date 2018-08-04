@@ -1,2 +1,7 @@
 version 1.0:
 --released
+
+version 1.1:
+--An automatically generated Local can no longer have two copies of the same quirk. If they draw the same card twice,
+they end up with only one quirk. This only applies to the Generate button, not individual card draws.
+
